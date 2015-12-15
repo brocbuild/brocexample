@@ -7,7 +7,7 @@
  
  
 /**
- * @file hello_world.cpp
+ * @file example_application.cpp
  * @author liruihao(com@baidu.com)
  * @date 2015/12/07 16:03:14
  * @brief 
@@ -24,22 +24,3 @@ int main()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* vim: set expandtab ts=4 sw=4 sts=4 tw=100: */

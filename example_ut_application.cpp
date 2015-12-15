@@ -7,7 +7,7 @@
  
  
 /**
- * @file hello_world_ut.cpp
+ * @file example_ut_application.cpp
  * @author liruihao(com@baidu.com)
  * @date 2015/12/09 11:39:46
  * @brief 

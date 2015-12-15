@@ -7,14 +7,14 @@
  
  
 /**
- * @file common.cpp
+ * @file example_library.cpp
  * @author liruihao(com@baidu.com)
  * @date 2015/12/04 13:16:29
  * @brief 
  *  
  **/
 
-#include <brocbuild/brocexample/example_library.h>
+#include "brocbuild/brocexample/example_library.h"
 
 std::string joinstring(std::string a, std::string b)
 {
