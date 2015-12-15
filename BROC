@@ -1,0 +1,29 @@
+#edit-mode: -*- python -*-
+#coding:utf-8
+
+COMPILER_PATH('/usr/bin')
+
+#add this to deal with dependency conflict
+#CONFIGS("liruihao/mcpack@master@branch")
+
+#add this to get dependency conflict
+#CONFIGS("liruihao/test@master@branch")
+
+#planish dependency
+#CONFIGS("liruihao/ullib@master@branch")
+
+#add a dependency
+#CONFIGS("liruihao/ub@master@branch")
+
+#show the debug mode and the release mode
+CXXFLAGS("-Werror -O0", "-Wall -O2")
+
+#get a "hello world" application
+APPLICATION("example_application", Sources("example_application.cpp"))
+UT_APPLICATION("example_ut_application", Sources("example_ut_application.cpp"), UTArgs("-c conf -h help"))
+
+#get a staticlibrary
+STATIC_LIBRARY("example_library", Sources("example_library.cpp"))
+
+#use dependency module ub, get an application
+#APPLICATION("example_dependency", Sources("example_dependency.cpp"), Libs("$OUT_ROOT/liruihao/ub/output/lib/libub.a"))
