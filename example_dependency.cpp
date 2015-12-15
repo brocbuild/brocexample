@@ -15,12 +15,13 @@
  **/
 
 #include <stdio.h>
-#include <liruihao/ub/src/ub.h>
+#include <brocbuild/function/src/function.h>
 
 int main()
 {
-    ub myub;
-    printf("Hello world\nUse ub ?\n%s\n", myub.is_ub()? "Yes": "No");
+    function myfunction;
+    printf("Hello world\nUse function module?\n%s\n", \
+            myfunction.is_function()? "Yes": "No");
     return 0;
 }
 

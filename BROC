@@ -26,4 +26,4 @@ UT_APPLICATION("example_ut_application", Sources("example_ut_application.cpp"), 
 STATIC_LIBRARY("example_library", Sources("example_library.cpp"))
 
 #use dependency module ub, get an application
-#APPLICATION("example_dependency", Sources("example_dependency.cpp"), Libs("$OUT_ROOT/liruihao/ub/output/lib/libub.a"))
+APPLICATION("example_dependency", Sources("example_dependency.cpp"), Libs("$OUT_ROOT/brocbuild/function/output/lib/libfunction.a"))
