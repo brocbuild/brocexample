@@ -14,7 +14,7 @@
  *  
  **/
 
-#include "brocbuild/brocexample/example_library.h"
+#include "brocbuild/example/lib.h"
 
 std::string joinstring(std::string a, std::string b)
 {
