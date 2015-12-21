@@ -19,11 +19,11 @@ CONFIGS("brocbuild/function@master@branch")
 CXXFLAGS("-Werror -O0", "-Wall -O2")
 
 #get a "hello world" application
-APPLICATION("example_application", Sources("example_application.cpp"))
-UT_APPLICATION("example_ut_application", Sources("example_ut_application.cpp"), UTArgs("-c conf -h help"))
+APPLICATION("app", Sources("app.cpp"))
+UT_APPLICATION("ut", Sources("ut.cpp"), UTArgs("-c conf -h help"))
 
 #get a staticlibrary
-STATIC_LIBRARY("example_library", Sources("example_library.cpp"))
+STATIC_LIBRARY("lib", Sources("lib.cpp"))
 
 #use dependency module ub, get an application
-APPLICATION("example_dependency", Sources("example_dependency.cpp", Include("/home/users/liruihao/broc/protobuf/include")), Libs("$OUT_ROOT/brocbuild/function/output/lib/libfunction.a", "$OUT_ROOT/brocbuild/configure/output/lib/libconfigure.a", "$OUT_ROOT/brocbuild/log/output/lib/liblog.a", "/home/users/liruihao/broc/protobuf/lib/libprotobuf.a"))
+APPLICATION("dep", Sources("dep.cpp", Include("/Users/baidu/protobuf/include")), Libs("$OUT_ROOT/brocbuild/function/output/lib/libfunction.a", "$OUT_ROOT/brocbuild/configure/output/lib/libconfigure.a", "$OUT_ROOT/brocbuild/log/output/lib/liblog.a", "/Users/baidu/protobuf/lib/libprotobuf.a"))
