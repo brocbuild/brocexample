@@ -15,6 +15,7 @@ CONFIGS("brocbuild/log@master@branch")
 #add a dependency
 CONFIGS("brocbuild/function@master@branch")
 
+CONFIGS("brocbuild/data@master@branch")
 #show the debug mode and the release mode
 CXXFLAGS("-Werror -O0", "-Wall -O2")
 
