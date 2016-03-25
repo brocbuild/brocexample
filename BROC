@@ -1,6 +1,6 @@
 #edit-mode: -*- python -*-
 #coding:utf-8
-import os
+#import os
 COMPILER_PATH('/usr/bin')
 
 #add this to deal with dependency conflict
