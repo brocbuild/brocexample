@@ -5,7 +5,9 @@
 
 trigger:
 - main
-
+- task: VSBuild@1
+  inputs:
+    solution: '**\*.sln'
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -17,3 +19,18 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    xcodeVersion: '10'
+    packageApp: false
+    sdk: ios14
+    testRunTitle: run build test 
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+workspace:
+  xxx
+  clean: 
+  parameters:
+    - 
