@@ -14,23 +14,11 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-- task: Xcode@5
+- task: PythonScript@0
   inputs:
-    actions: 'build'
-    xcodeVersion: '10'
-    packageApp: false
-    sdk: ios14
-    testRunTitle: run build test 
-- task: AndroidSigning@3
+    scriptSource: 'inline'
+    script: 'print("hello bcluod")'
+- task: Go@0
   inputs:
-    apkFiles: '**/*.apk'
-workspace:
-  xxx
-  clean: 
-  parameters:
-    - 
+    command: 'custom'
+    customCommand: version
